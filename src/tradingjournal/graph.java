@@ -83,7 +83,7 @@ public final class graph extends javax.swing.JFrame {
             
             rs = st.executeQuery("select * from add_trade where hide='1'");
             rs.last();
-            jTextField2.setText(Integer.toString(rs.getRow()));
+            jButton3.setText(Integer.toString(rs.getRow()));
             
             rs = st.executeQuery("select avg((sell_price - buy_price)*quantity) as 'avgP/L' from add_trade where hide='1'");
             rs.next();
@@ -93,7 +93,7 @@ public final class graph extends javax.swing.JFrame {
             rs.next();
             jTextField4.setText(rs.getString(1));
             
-            rs = st.executeQuery("select(select count(*) from add_trade where sell_price > buy_price and hide='1')/(select count(*) from add_trade where buy_price > sell_price and hide='1')");
+            rs = st.executeQuery("select(select count(*) from add_trade where sell_price > buy_price and hide='1')/((select count(*) from add_trade where buy_price > sell_price and hide='1')+0.0001)");
             rs.next();
             jTextField8.setText(rs.getString(1));
           
@@ -222,20 +222,20 @@ public final class graph extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         rSButtonIconI7 = new rojerusan.RSButtonIconI();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
         ChartPanel3 = new javax.swing.JPanel();
         ChartPanel5 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         savename = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jTextField8 = new javax.swing.JButton();
+        jTextField4 = new javax.swing.JButton();
+        jTextField3 = new javax.swing.JButton();
 
         jCTextField2.setBackground(new java.awt.Color(0, 0, 102));
         jCTextField2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 255, 255)));
@@ -268,7 +268,7 @@ public final class graph extends javax.swing.JFrame {
 
         rSButtonIconI7.setBackground(new java.awt.Color(204, 0, 51));
         rSButtonIconI7.setBorder(null);
-        rSButtonIconI7.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic\\next-button.png")); // NOI18N
+        rSButtonIconI7.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic2\\pic\\next-button.png")); // NOI18N
         rSButtonIconI7.setText(" Back ");
         rSButtonIconI7.setColorHover(new java.awt.Color(204, 0, 51));
         rSButtonIconI7.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
@@ -277,24 +277,6 @@ public final class graph extends javax.swing.JFrame {
                 rSButtonIconI7MouseClicked(evt);
             }
         });
-
-        jTextField2.setBackground(new java.awt.Color(0, 0, 102));
-        jTextField2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 204, 255)));
-        jTextField2.setCaretColor(new java.awt.Color(255, 255, 255));
-
-        jTextField3.setBackground(new java.awt.Color(0, 0, 102));
-        jTextField3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField3.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 204, 255)));
-        jTextField3.setCaretColor(new java.awt.Color(255, 255, 255));
-
-        jTextField4.setBackground(new java.awt.Color(0, 0, 102));
-        jTextField4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField4.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 204, 255)));
-        jTextField4.setCaretColor(new java.awt.Color(255, 255, 255));
 
         jLabel13.setBackground(new java.awt.Color(0, 0, 102));
         jLabel13.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
@@ -352,12 +334,6 @@ public final class graph extends javax.swing.JFrame {
             }
         });
 
-        jTextField8.setBackground(new java.awt.Color(0, 0, 102));
-        jTextField8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jTextField8.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField8.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 204, 255)));
-        jTextField8.setCaretColor(new java.awt.Color(255, 255, 255));
-
         ChartPanel3.setBackground(new java.awt.Color(0, 51, 153));
         ChartPanel3.setLayout(new java.awt.BorderLayout());
 
@@ -375,6 +351,31 @@ public final class graph extends javax.swing.JFrame {
                 savenameMouseClicked(evt);
             }
         });
+
+        jButton3.setBackground(new java.awt.Color(51, 0, 153));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 204, 255)));
+
+        jTextField8.setBackground(new java.awt.Color(51, 0, 153));
+        jTextField8.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        jTextField8.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField8.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 204, 255)));
+        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField8ActionPerformed(evt);
+            }
+        });
+
+        jTextField4.setBackground(new java.awt.Color(51, 0, 153));
+        jTextField4.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField4.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 204, 255)));
+
+        jTextField3.setBackground(new java.awt.Color(51, 0, 153));
+        jTextField3.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(255, 255, 255));
+        jTextField3.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 204, 255)));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -405,26 +406,31 @@ public final class graph extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(138, 138, 138)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(125, 125, 125)
-                        .addComponent(jLabel13)))
-                .addGap(197, 197, 197)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19))
-                .addGap(202, 202, 202)
+                        .addComponent(jLabel13))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(4, 4, 4)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(180, 180, 180)
+                        .addComponent(jLabel19))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(156, 156, 156)
+                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(174, 174, 174)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
-                    .addComponent(jTextField4))
-                .addGap(131, 131, 131))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(131, 131, 131))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(121, 121, 121))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(246, 246, 246)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -448,18 +454,24 @@ public final class graph extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(rSButtonIconI7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(52, 52, 52)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ChartPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ChartPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -521,6 +533,10 @@ public final class graph extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_savenameMouseClicked
 
+    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField8ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -568,6 +584,7 @@ public final class graph extends javax.swing.JFrame {
     private javax.swing.JPanel ChartPanel5;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
+    private javax.swing.JButton jButton3;
     private app.bolivia.swing.JCTextField jCTextField2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
@@ -580,10 +597,9 @@ public final class graph extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollBar jScrollBar1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField8;
+    private javax.swing.JButton jTextField3;
+    private javax.swing.JButton jTextField4;
+    private javax.swing.JButton jTextField8;
     private rojerusan.RSButtonIconI rSButtonIconI7;
     private rojeru_san.complementos.RSEstiloTablaHeader rSEstiloTablaHeader1;
     private javax.swing.JLabel savename;

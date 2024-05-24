@@ -431,7 +431,6 @@ public class signup1 extends javax.swing.JFrame {
         jLabel20.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic2\\telephone.png")); // NOI18N
         pan_ed1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 340, 40, 50));
 
-        icon1.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic2\\show.png")); // NOI18N
         icon1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         icon1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -440,7 +439,6 @@ public class signup1 extends javax.swing.JFrame {
         });
         pan_ed1.add(icon1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 200, 30, 30));
 
-        icon2.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic2\\hide.png")); // NOI18N
         icon2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         icon2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -449,7 +447,6 @@ public class signup1 extends javax.swing.JFrame {
         });
         pan_ed1.add(icon2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 200, -1, 30));
 
-        icon3.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic2\\show.png")); // NOI18N
         icon3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         icon3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -458,7 +455,6 @@ public class signup1 extends javax.swing.JFrame {
         });
         pan_ed1.add(icon3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 280, 30, 30));
 
-        icon4.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic2\\hide.png")); // NOI18N
         icon4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         icon4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

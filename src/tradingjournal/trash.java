@@ -422,7 +422,7 @@ public boolean restore(){
 
         rSButtonIconI7.setBackground(new java.awt.Color(204, 0, 51));
         rSButtonIconI7.setBorder(null);
-        rSButtonIconI7.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic\\next-button.png")); // NOI18N
+        rSButtonIconI7.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic2\\pic\\next-button.png")); // NOI18N
         rSButtonIconI7.setText(" Back ");
         rSButtonIconI7.setColorHover(new java.awt.Color(204, 0, 51));
         rSButtonIconI7.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N

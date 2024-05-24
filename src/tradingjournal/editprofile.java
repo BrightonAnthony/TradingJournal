@@ -211,7 +211,6 @@ public boolean updateprofile(){
         taddress = new app.bolivia.swing.JCTextField();
         rSMaterialButtonCircle1 = new rojerusan.RSMaterialButtonCircle();
         tgender = new javax.swing.JComboBox<>();
-        tdob = new com.toedter.calendar.JDateChooser();
         rSButtonIconI7 = new rojerusan.RSButtonIconI();
         savename = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -219,6 +218,7 @@ public boolean updateprofile(){
         jButton7 = new javax.swing.JButton();
         rSButtonIconI4 = new rojerusan.RSButtonIconI();
         rSButtonIconI5 = new rojerusan.RSButtonIconI();
+        tdob = new com.toedter.calendar.JDateChooser();
 
         jCTextField2.setBackground(new java.awt.Color(0, 0, 102));
         jCTextField2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 255, 255)));
@@ -353,13 +353,9 @@ public boolean updateprofile(){
         tgender.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         tgender.setName(""); // NOI18N
 
-        tdob.setBackground(new java.awt.Color(0, 0, 102));
-        tdob.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 204, 255)));
-        tdob.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-
         rSButtonIconI7.setBackground(new java.awt.Color(204, 0, 51));
         rSButtonIconI7.setBorder(null);
-        rSButtonIconI7.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic\\next-button.png")); // NOI18N
+        rSButtonIconI7.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic2\\pic\\next-button.png")); // NOI18N
         rSButtonIconI7.setText(" Back ");
         rSButtonIconI7.setColorHover(new java.awt.Color(204, 0, 51));
         rSButtonIconI7.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
@@ -425,6 +421,10 @@ public boolean updateprofile(){
             }
         });
 
+        tdob.setBackground(new java.awt.Color(51, 0, 153));
+        tdob.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(51, 204, 255)));
+        tdob.setForeground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -465,8 +465,8 @@ public boolean updateprofile(){
                                 .addComponent(jButton4)
                                 .addGap(43, 43, 43)))
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tgender, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tdob, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(tgender, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tdob, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(196, 196, 196)
@@ -518,9 +518,13 @@ public boolean updateprofile(){
                                     .addComponent(temail, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(52, 52, 52)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(taddress, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(2, 2, 2)
+                                        .addComponent(tdob, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(taddress, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -535,9 +539,7 @@ public boolean updateprofile(){
                                     .addComponent(tname, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(54, 54, 54)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tdob, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(tgender, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)

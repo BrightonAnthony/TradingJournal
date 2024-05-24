@@ -213,13 +213,13 @@ public void strategylist(){
         jLabel12 = new javax.swing.JLabel();
         taction = new javax.swing.JComboBox<>();
         tquantity = new app.bolivia.swing.JCTextField();
-        tdate = new com.toedter.calendar.JDateChooser();
         rSButtonIconI7 = new rojerusan.RSButtonIconI();
         jLabel11 = new javax.swing.JLabel();
         tpro = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         savename = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        tdate = new com.toedter.calendar.JDateChooser();
 
         jCTextField2.setBackground(new java.awt.Color(0, 0, 102));
         jCTextField2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 255, 255)));
@@ -383,14 +383,9 @@ public void strategylist(){
             }
         });
 
-        tdate.setBackground(new java.awt.Color(0, 0, 102));
-        tdate.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 255, 255)));
-        tdate.setDateFormatString("dd-MM-yyyy");
-        tdate.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-
         rSButtonIconI7.setBackground(new java.awt.Color(204, 0, 51));
         rSButtonIconI7.setBorder(null);
-        rSButtonIconI7.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic\\next-button.png")); // NOI18N
+        rSButtonIconI7.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic2\\pic\\next-button.png")); // NOI18N
         rSButtonIconI7.setText(" Back ");
         rSButtonIconI7.setColorHover(new java.awt.Color(204, 0, 51));
         rSButtonIconI7.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
@@ -434,6 +429,10 @@ public void strategylist(){
         jLabel13.setText("Action :");
         jLabel13.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
+        tdate.setBackground(new java.awt.Color(0, 0, 102));
+        tdate.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 255, 255)));
+        tdate.setForeground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -466,12 +465,11 @@ public void strategylist(){
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(taction, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(tstrategy, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(tside, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(tdate, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
-                                    .addComponent(tscript, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(tstrategy, javax.swing.GroupLayout.Alignment.LEADING, 0, 171, Short.MAX_VALUE)
+                                .addComponent(tside, javax.swing.GroupLayout.Alignment.LEADING, 0, 171, Short.MAX_VALUE)
+                                .addComponent(tscript, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                                .addComponent(tdate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(260, 260, 260)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -507,8 +505,8 @@ public void strategylist(){
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(39, 39, 39)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel2)
-                                    .addComponent(tdate, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(tdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGap(38, 38, 38)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(tstrategy, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)

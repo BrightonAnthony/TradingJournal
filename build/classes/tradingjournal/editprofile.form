@@ -144,8 +144,8 @@
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="tgender" alignment="1" min="-2" pref="171" max="-2" attributes="0"/>
-                              <Component id="tdob" alignment="1" min="-2" pref="171" max="-2" attributes="0"/>
+                              <Component id="tgender" min="-2" pref="171" max="-2" attributes="0"/>
+                              <Component id="tdob" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -215,9 +215,15 @@
                                       <Component id="jButton3" min="-2" pref="39" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="taddress" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                      <Component id="jButton6" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                          <Component id="tdob" min="-2" pref="39" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="taddress" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                                          <Component id="jButton6" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
                               <Group type="102" attributes="0">
@@ -238,10 +244,7 @@
                                       <Component id="jButton1" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="tdob" alignment="1" min="-2" pref="39" max="-2" attributes="0"/>
-                                      <Component id="jButton4" alignment="1" min="-2" pref="39" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="jButton4" min="-2" pref="39" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace pref="61" max="32767" attributes="0"/>
@@ -600,23 +603,6 @@
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="tdob">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="66" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-                <MatteColorBorder bottom="2" left="2" right="2" top="2">
-                  <Color PropertyName="color" blue="ff" green="cc" red="0" type="rgb"/>
-                </MatteColorBorder>
-              </Border>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="1"/>
-            </Property>
-          </Properties>
-        </Component>
         <Component class="rojerusan.RSButtonIconI" name="rSButtonIconI7">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -626,7 +612,7 @@
               <Border info="null"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic\next-button.png"/>
+              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic2\pic\next-button.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" Back "/>
             <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -773,6 +759,23 @@
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="rSButtonIconI5MouseClicked"/>
           </Events>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="tdob">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="99" green="0" red="33" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder bottom="3" left="3" right="3" top="3">
+                  <Color PropertyName="color" blue="ff" green="cc" red="33" type="rgb"/>
+                </MatteColorBorder>
+              </Border>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

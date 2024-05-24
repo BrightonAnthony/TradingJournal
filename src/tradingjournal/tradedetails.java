@@ -215,7 +215,7 @@ public boolean deletetable(){
             rs.next();
             jButton8.setText(rs.getString(1));
             
-            rs = st.executeQuery("select(select count(*) from add_trade where sell_price > buy_price and hide='1')/(select count(*) from add_trade where buy_price > sell_price and hide='1')");
+            rs = st.executeQuery("select(select count(*) from add_trade where sell_price > buy_price and hide='1')/((select count(*) from add_trade where buy_price > sell_price and hide='1')+0.0001)");
             rs.next();
             jButton9.setText(rs.getString(1));
           
@@ -324,12 +324,12 @@ public boolean deletetable(){
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        date1 = new com.toedter.calendar.JDateChooser();
-        date2 = new com.toedter.calendar.JDateChooser();
         jLabel16 = new javax.swing.JLabel();
         rSMaterialButtonCircle5 = new rojerusan.RSMaterialButtonCircle();
         jLabel7 = new javax.swing.JLabel();
         savename = new javax.swing.JLabel();
+        date1 = new com.toedter.calendar.JDateChooser();
+        date2 = new com.toedter.calendar.JDateChooser();
 
         jCTextField2.setBackground(new java.awt.Color(0, 0, 102));
         jCTextField2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 255, 255)));
@@ -405,7 +405,7 @@ public boolean deletetable(){
 
         rSButtonIconI7.setBackground(new java.awt.Color(204, 0, 51));
         rSButtonIconI7.setBorder(null);
-        rSButtonIconI7.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic\\next-button.png")); // NOI18N
+        rSButtonIconI7.setIcon(new javax.swing.ImageIcon("C:\\Users\\princy\\Desktop\\Brighton\\pic2\\pic\\next-button.png")); // NOI18N
         rSButtonIconI7.setText(" Back ");
         rSButtonIconI7.setColorHover(new java.awt.Color(204, 0, 51));
         rSButtonIconI7.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
@@ -522,14 +522,6 @@ public boolean deletetable(){
         jButton1.setText("Date Range");
         jButton1.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 204, 255)));
 
-        date1.setBackground(new java.awt.Color(0, 0, 102));
-        date1.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 204, 255)));
-        date1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-
-        date2.setBackground(new java.awt.Color(0, 0, 102));
-        date2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 204, 255)));
-        date2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-
         jLabel16.setBackground(new java.awt.Color(0, 0, 102));
         jLabel16.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
@@ -569,6 +561,14 @@ public boolean deletetable(){
             }
         });
 
+        date1.setBackground(new java.awt.Color(0, 0, 102));
+        date1.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 204, 255)));
+        date1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
+        date2.setBackground(new java.awt.Color(0, 0, 102));
+        date2.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 204, 255)));
+        date2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -589,7 +589,7 @@ public boolean deletetable(){
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(78, 78, 78)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29)
+                        .addGap(36, 36, 36)
                         .addComponent(date1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(date2, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -598,7 +598,7 @@ public boolean deletetable(){
                         .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(71, 71, 71)
                         .addComponent(rSMaterialButtonCircle5, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 403, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)

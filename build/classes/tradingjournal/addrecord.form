@@ -138,13 +138,11 @@
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="taction" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
-                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                                  <Component id="tstrategy" min="-2" pref="171" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="tside" max="32767" attributes="0"/>
-                                      <Component id="tdate" pref="171" max="32767" attributes="0"/>
-                                      <Component id="tscript" pref="0" max="32767" attributes="0"/>
-                                  </Group>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="tstrategy" alignment="0" pref="171" max="32767" attributes="0"/>
+                                  <Component id="tside" alignment="0" pref="171" max="32767" attributes="0"/>
+                                  <Component id="tscript" alignment="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="tdate" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="260" max="-2" attributes="0"/>
@@ -192,8 +190,8 @@
                               <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                      <Component id="tdate" min="-2" pref="32" max="-2" attributes="0"/>
+                                      <Component id="jLabel2" max="32767" attributes="0"/>
+                                      <Component id="tdate" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
@@ -633,24 +631,6 @@
             <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tquantityKeyPressed"/>
           </Events>
         </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="tdate">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="66" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-                <MatteColorBorder bottom="2" left="2" right="2" top="2">
-                  <Color PropertyName="color" blue="ff" green="ff" red="0" type="rgb"/>
-                </MatteColorBorder>
-              </Border>
-            </Property>
-            <Property name="dateFormatString" type="java.lang.String" value="dd-MM-yyyy"/>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="14" style="1"/>
-            </Property>
-          </Properties>
-        </Component>
         <Component class="rojerusan.RSButtonIconI" name="rSButtonIconI7">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -660,7 +640,7 @@
               <Border info="null"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic\next-button.png"/>
+              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic2\pic\next-button.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" Back "/>
             <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -752,6 +732,23 @@
             <Property name="text" type="java.lang.String" value="Action :"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Default Cursor"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="tdate">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder bottom="2" left="2" right="2" top="2">
+                  <Color PropertyName="color" blue="ff" green="ff" red="0" type="rgb"/>
+                </MatteColorBorder>
+              </Border>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
           </Properties>
         </Component>

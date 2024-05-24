@@ -372,7 +372,7 @@
               <Border info="null"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic\next-button.png"/>
+              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic2\pic\next-button.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" Back "/>
             <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">

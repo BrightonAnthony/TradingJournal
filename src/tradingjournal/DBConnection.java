@@ -16,7 +16,7 @@ public class DBConnection {
     public static Connection getConnection(){
         try{
           Class.forName("com.mysql.cj.jdbc.Driver");
-          con = DriverManager.getConnection("jdbc:mysql://localhost:3306/trading_journal?useSSL=false","brighton","bri123");
+          con = DriverManager.getConnection("jdbc:mysql://localhost:3307/trading_journal?useSSL=false","brighton","bri123");
         
          }catch (Exception e){
          System.out.println(e);    

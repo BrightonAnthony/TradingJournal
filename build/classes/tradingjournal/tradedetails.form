@@ -115,7 +115,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
                           <Component id="jButton1" min="-2" pref="128" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                           <Component id="date1" min="-2" pref="136" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="date2" min="-2" pref="136" max="-2" attributes="0"/>
@@ -127,7 +127,7 @@
                           <Component id="rSMaterialButtonCircle5" min="-2" pref="183" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace pref="403" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel15" min="-2" pref="110" max="-2" attributes="0"/>
@@ -215,7 +215,7 @@
                                           <Component id="jLabel15" pref="43" max="32767" attributes="0"/>
                                       </Group>
                                       <Component id="date2" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="date1" min="-2" pref="31" max="-2" attributes="0"/>
+                                      <Component id="date1" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
@@ -223,7 +223,7 @@
                                       <Component id="rSMaterialButtonCircle5" alignment="3" min="-2" pref="78" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <Component id="jButton1" min="-2" pref="39" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel16" min="-2" pref="15" max="-2" attributes="0"/>
@@ -413,7 +413,7 @@
               <Border info="null"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic\next-button.png"/>
+              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic2\pic\next-button.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value=" Back "/>
             <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -679,40 +679,6 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="date1">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="66" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-                <MatteColorBorder bottom="2" left="2" right="2" top="2">
-                  <Color PropertyName="color" blue="ff" green="cc" red="0" type="rgb"/>
-                </MatteColorBorder>
-              </Border>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="date2">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="66" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-                <MatteColorBorder bottom="2" left="2" right="2" top="2">
-                  <Color PropertyName="color" blue="ff" green="cc" red="0" type="rgb"/>
-                </MatteColorBorder>
-              </Border>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="12" style="1"/>
-            </Property>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JLabel" name="jLabel16">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -785,6 +751,40 @@
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="savenameMouseClicked"/>
           </Events>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="date1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder bottom="2" left="2" right="2" top="2">
+                  <Color PropertyName="color" blue="ff" green="cc" red="0" type="rgb"/>
+                </MatteColorBorder>
+              </Border>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="date2">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder bottom="2" left="2" right="2" top="2">
+                  <Color PropertyName="color" blue="ff" green="cc" red="0" type="rgb"/>
+                </MatteColorBorder>
+              </Border>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

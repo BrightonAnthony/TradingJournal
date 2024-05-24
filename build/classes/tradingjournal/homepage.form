@@ -66,32 +66,6 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="1" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="88" max="32767" attributes="0"/>
-                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="179" max="-2" attributes="0"/>
-                  <Component id="jLabel8" min="-2" pref="69" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jLabel12" min="-2" pref="64" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="209" max="-2" attributes="0"/>
-                          <Component id="jLabel7" min="-2" pref="75" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
-                          <Component id="jLabel6" min="-2" pref="67" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="667" max="-2" attributes="0"/>
-                          <Component id="jLabel5" min="-2" pref="56" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="savename" min="-2" pref="80" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="jLabel9" min="-2" pref="21" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
-              <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
@@ -99,7 +73,7 @@
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="41" max="32767" attributes="0"/>
                           <Component id="ChartPanel1" min="-2" pref="459" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -130,7 +104,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace max="32767" attributes="0"/>
+                          <EmptySpace pref="42" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jButton2" min="-2" pref="132" max="-2" attributes="0"/>
                               <Component id="jButton5" min="-2" max="-2" attributes="0"/>
@@ -144,12 +118,37 @@
                       </Group>
                   </Group>
               </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="163" max="-2" attributes="0"/>
-                  <Component id="jLabel3" min="-2" pref="61" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+              <Group type="102" attributes="0">
+                  <EmptySpace pref="77" max="32767" attributes="0"/>
+                  <Component id="jLabel10" min="-2" pref="69" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="179" max="-2" attributes="0"/>
+                  <Component id="jLabel8" min="-2" pref="69" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="jLabel12" min="-2" pref="64" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jLabel112" min="-2" pref="69" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
+                          <Component id="jLabel7" min="-2" pref="75" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel14" min="-2" pref="69" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
+                          <Component id="jLabel6" min="-2" pref="67" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="667" max="-2" attributes="0"/>
+                          <Component id="jLabel5" min="-2" pref="56" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="savename" min="-2" pref="80" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="jLabel9" min="-2" pref="21" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
@@ -181,28 +180,21 @@
                               </Group>
                               <Group type="102" attributes="0">
                                   <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="ChartPanel1" min="-2" pref="361" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel4" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                              <Component id="jLabel3" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="ChartPanel1" min="-2" pref="361" max="-2" attributes="0"/>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jButton4" max="32767" attributes="0"/>
+                                                      <Component id="jButton4" min="-2" pref="49" max="-2" attributes="0"/>
                                                       <Component id="jButton6" alignment="1" min="-2" pref="49" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                               <Component id="jButton1" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
                                               <Component id="jButton3" alignment="0" min="-2" pref="49" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace max="32767" attributes="0"/>
+                                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                                           <Component id="rSMaterialButtonCircle1" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
                                       </Group>
@@ -229,10 +221,15 @@
                       <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="jLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel112" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <Component id="jLabel7" alignment="1" max="32767" attributes="0"/>
                       </Group>
                       <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               </Group>
@@ -277,7 +274,7 @@
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic\i11.png"/>
+              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic2\pic\i11.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel5"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -290,9 +287,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic\i5.png"/>
-            </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -304,7 +298,7 @@
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic\i8.png"/>
+              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic2\pic\i8.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel5"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -317,9 +311,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic\i6.png"/>
-            </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -330,9 +321,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel12">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic\i9.png"/>
-            </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
@@ -456,48 +444,6 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel4">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="66" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="44" green="44" red="d9" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" Loss %"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-                <MatteColorBorder>
-                  <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
-                </MatteColorBorder>
-              </Border>
-            </Property>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="jLabel3">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="66" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Segoe UI" size="18" style="1"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="66" red="66" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value=" Win %"/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-                <MatteColorBorder>
-                  <Color PropertyName="color" blue="ff" green="ff" red="ff" type="rgb"/>
-                </MatteColorBorder>
-              </Border>
-            </Property>
-          </Properties>
-        </Component>
         <Container class="javax.swing.JPanel" name="panpie">
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
@@ -616,6 +562,48 @@
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="savenameMouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel10">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic2\pic\i6.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jLabel5"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel10MouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel112">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic2\pic\i9.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jLabel5"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel112MouseClicked"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel14">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\princy\Desktop\Brighton\pic2\pic\i5.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="jLabel5"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Hand Cursor"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel14MouseClicked"/>
           </Events>
         </Component>
       </SubComponents>
